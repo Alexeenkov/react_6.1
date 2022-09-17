@@ -1,0 +1,166 @@
+@import url("//fonts.googleapis.com/css?family=Work+Sans:300,400,600");
+
+/* ! -------------------reset-styles------------------ */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #444;
+}
+
+/* ! ------------------------body-------------------- */
+body {
+    background: #f3f3f3;
+    color: #333;
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.4;
+    height: 100%;
+    width: 100%;
+    font-weight: 400;
+    min-width: 320px;
+    font-style: normal;
+}
+
+body.lock,
+html.lock {
+    overflow: hidden;
+}
+
+/* ! ------------------------styles------------------ */
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.form label span {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form input {
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.form button {
+    padding: 5px 20px;
+    border: 1px solid #000;
+    height: 30px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.form button:hover {
+    background-color: rgb(182, 203, 255);
+}
+
+.clocks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.clock {
+    position: relative;
+    min-width: 90px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.clock>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.clock>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.clock button {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.clock button:hover {
+    background-color: rgb(182, 203, 255);;
+}
